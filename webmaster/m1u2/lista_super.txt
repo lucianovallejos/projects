@@ -1,0 +1,4 @@
+pan
+verduras 
+carne
+manzana
