@@ -1,0 +1,41 @@
+
+
+.caja {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(0deg, #ff0000 0%, #0e15e1 100%);
+    padding: 30px;
+    border: 5px solid black;
+    border-radius: 30px;
+    border-radius: 0 10px 10px 10px;
+    margin: 50px;
+    box-shadow: 10px 20px 35px black;
+
+    
+}
+
+.caja2 {
+    background-color: yellow;
+    column-count: 4;
+    column-gap: 60px;
+    column-rule: 2px dashed black;
+}
+
+.caja2 p{
+    margin: 0;
+}
+
+h2,h3 {
+    font-family: 'Roboto', sans-serif;
+    color: red;
+}
+
+.color{
+    font-size: 50px;
+color: white;
+}
+
+p{
+    text-align: center;
+}
+

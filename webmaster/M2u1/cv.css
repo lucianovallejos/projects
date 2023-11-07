@@ -1,0 +1,64 @@
+h1 {
+    font-family: 'agbalumo', sans-serif;
+    background-color: rgb(234, 149, 3);
+    color: black;
+    text-align: center;
+}
+
+img {
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    width: 400px;
+    height: 400px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: aqua;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.destacados {
+    color: rgb(234, 149, 3);
+    font-size: 20px;
+}
+
+h2 {
+     font-family: 'agbalumo', sans-serif;
+    color: black;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+
+    .caja {
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(0deg, #ff0000 0%, #0e15e1 100%);
+        padding: 30px;
+        border: 5px solid black;
+        border-radius: 30px;
+        border-radius: 0 10px 10px 10px;
+        margin: 50px;
+        box-shadow: 10px 20px 35px black;
+    
+        
+    
+}
+
+.destacados1 {
+    column-count: 3;
+    color: rgb(234, 149, 3);
+    font-size: 20px;
+}
+.destacados2 {
+    column-count: 3;
+    color: rgb(234, 149, 3);
+    font-size: 20px;
+
+}
+
