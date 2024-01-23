@@ -1,0 +1,43 @@
+<div class="contacto">
+    <h2>Información de contacto</h2>
+    <p>En TechnoLuchijax, Contamos con un equipo de profesionales altamente capacitados que pueden solucionar
+        cualquier problema que tenga su
+        computadora.</p>
+    <p>Si tiene alguna pregunta o necesita ayuda con su computadora, no dude en contactarnos. Estaremos
+        encantados de atenderle.</p>
+    <ul>
+        <li>
+            <h2>Teléfono</h2>
+            <p>+54 11 5555-5555</p>
+        </li>
+        <li>
+            <h2>Correo electrónico</h2>
+            <p>technoluchijax@gmail.com</p>
+        </li>
+        <li>
+            <h2>Dirección</h2>
+            <p>Av. Corrientes 1234, Buenos Aires, Argentina</p>
+        </li>
+    </ul>
+    <h2>Formulario de contacto</h2>
+    <form action="/contacto" method="post" class="formulario">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" name="email">
+        </p>
+        <p>
+            <label for="telefono">Telefono</label>
+            <input type="text" name="tel">
+        </p>
+        <p>
+            <label for="mensaje"></label>
+            <textarea name="mensajeria"></textarea>
+        </p>
+        <p class="acciones"><input type="submit" value="Enviar" /></p>
+    </form>
+    <p>{{message}}</p>
+</div>

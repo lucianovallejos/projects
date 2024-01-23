@@ -1,0 +1,422 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: black;
+
+}
+
+
+.contenedor {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.main {
+    width: 70%;
+    background: #fff;
+padding: 20px;
+float: left;
+box-sizing: border-box;
+
+}
+
+.main img{
+width: 100%;
+height: auto;
+}
+
+.logo img {
+    width: 100%;
+    margin: 0 auto;
+    padding: auto;
+
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 1px 20px;
+}
+h2{
+
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+
+nav {
+    background-color: rgb(213, 0, 0);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a.activo {
+    background-color: rgb(255, 119, 0);
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    clear: both;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 20px;
+   
+
+}
+
+footer p {
+    color: #000;
+}
+
+/*inicio home*/
+
+.discord img {
+    width: 50%;
+    height: 100px;
+    max-width: 1000px;
+
+}
+
+.homeimg img {
+    width: 100%;
+    height: 300px;
+    max-width: 1000px;
+}
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+
+.redes1 img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+.redes {
+
+    width: 300px;
+    margin: 0 auto;
+    padding: auto;
+    background-color: #fae603;
+
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bienvenidos p {
+    font-size: 20px;
+}
+
+.redes h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.redes .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    color: aliceblue;
+}
+
+
+/*fin home*/
+/*inicio nosotros*/
+
+.historia {
+    text-align: center;
+}
+
+.historia h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.lucho {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lucho img {
+    width: 100%;
+ 
+}
+
+
+.lucho h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lucho p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.nosotros-contenido {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.nosotros-contenido h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/*fin nosotros*/
+
+/*inicio servicio*/
+
+.servicio {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.holder h2 {
+
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+
+
+}
+
+.servicio .info h4 {
+    color: red;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.servicio .info p {
+    font-size: 13px;
+
+
+}
+
+.servicio img {
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/*fin servicios*/
+
+/*inicio juegos*/
+
+
+.videojuegos h2 {
+
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+
+
+}
+
+
+.videojuegos a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.venta {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.venta h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.venta p {
+    font-size: 14px;
+}
+
+.venta button {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/*fin juegos*/
+
+/*inicio contacto*/
+
+.contacto {
+    padding: 20px;
+}
+
+.contacto h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    background-color: rgb(227, 0, 0);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fff;
+    color: #222;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/*fin contacto*/
+
+/*inicio novedades*/
+.novedades {
+   
+    padding: 20x;
+    border-bottom: 1px solid #ccc;
+}
+
+.novedades h2 {
+
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+
+
+
+}
+
+.novedades ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.novedades ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.novedades ul li img {
+    width: 400px;
+    height: auto;
+}
+
+.novedades ul li h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.novedades ul li p {
+    font-size: 14px;
+}
+
+
+
+
+/*fin novedades*/
+
+/*inicio videos*/
+.trailers {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.trailers h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.trailers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trailers li {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.trailers li img {
+    width: 600px;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.trailers li h3 {
+    font-size: 1.5em;
+}
+
+
+/*fin videos*/
