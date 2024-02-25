@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
+var session = require('express-session');
 
 
 var indexRouter = require('./routes/index');
@@ -14,7 +15,9 @@ var serviciosRouter = require('./routes/servicios');
 var juegosRouter = require('./routes/juegos');
 var novedadesRouter = require('./routes/novedades');
 var videosRouter = require('./routes/videos');
-var  contactoRouter = require('./routes/contacto');
+var contactoRouter = require('./routes/contacto');
+var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -28,6 +31,28 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: 'PW2024awqyeudj',
+  resave: false,
+  saveUninitialized: true
+}))
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+
+
 app.use('/', indexRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/servicios', serviciosRouter);
@@ -35,16 +60,17 @@ app.use('/juegos', juegosRouter);
 app.use('/novedades', novedadesRouter);
 app.use('/videos', videosRouter);
 app.use('/contacto', contactoRouter);
-
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
