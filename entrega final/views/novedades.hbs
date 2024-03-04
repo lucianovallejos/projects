@@ -1,29 +1,12 @@
- <div class="novedades">
-      <h2>Novedades</h2>
-      <ul>
-        <li>
-          <a href="https://www.nintendo.com/es-ar/store/products/super-mario-bros-wonder-switch/">
-            <img src="images/novedades/nintendo.jpg" alt="Juego nuevo">
-            <h3>Nuevo juego de Mario</h3>
-            <p>Nintendo ha anunciado un nuevo juego de Mario para la Nintendo Switch. El juego se llama "Super Mario
-              Bros Wonder" y se lanzará el 1 de Diciembre de 2023.</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.adobe.com/ar/products/photoshop.html">
-            <img src="images/novedades/adobe.jpg" alt="Software nuevo">
-            <h3>Nuevo software de edición de fotos</h3>
-            <p>Adobe ha lanzado un nuevo software de edición de fotos llamado "Photoshop CC 2024". El software incluye
-              nuevas funciones y mejoras, como un nuevo motor de procesamiento de imágenes, un nuevo panel de
-              herramientas y un nuevo sistema de capas.</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.intel.la/content/www/xl/es/products/details/processors/core/i9.html">
-            <img src="images/novedades/intel.jpg" alt="Hardware nuevo">
-            <h3>Nuevo procesador de Intel</h3>
-            <p>Intel ha anunciado un nuevo procesador llamado "Core i9-13900K". El procesador tiene 24 núcleos y 32
-              subprocesos y funciona a una velocidad de reloj de hasta 5,5 GHz.</p>
-          </a>
-      </ul>
- </div>
+<div class="titulon">
+<h2>Novedades</h2>
+<br>
+<br>
+{{#each novedades}}
+<div class="novedades">
+  <h3>{{titulo}}</h3>
+  <h4>{{subtitulo}}</h4>
+  <p>{{cuerpo}}</p>
+  <hr>
+</div>
+{{/each}}
