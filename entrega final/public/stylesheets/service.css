@@ -1,8 +1,12 @@
+
 header {
     padding: 0px 50px;
 
 }
-
+.contenedor3 {
+        background-color: black;
+      }
+      
 .contenedor1 { 
     background-color: black;
 }
@@ -13,7 +17,6 @@ header {
     margin: 0 auto;
     overflow: hidden;
     background-color: black;
-
 }
 
 .logo img {
@@ -30,6 +33,7 @@ nav {
     background-color: rgb(213, 0, 0);
     margin-bottom: 20px;
     box-sizing: border-box;
+    
 }
 
 nav ul {
@@ -56,10 +60,13 @@ nav ul li a.activo {
     background-color: rgb(255, 119, 0);
 }
 
+
+  
 .footer {
   background-color: #860000;
   color: #fff;
   padding: 30px 0;
+
 }
 
 .footer .container {
